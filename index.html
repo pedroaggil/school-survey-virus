@@ -1,34 +1,53 @@
+<!-- 
+  Bom dia, seus cheirosos! Tranquilo?
+
+  Bom, esse é o código-fonte do projeto interdisciplinar que estamos desenvolvendo.
+  Deixarei este código inteiramente comentado para que possam entender o que está sendo feito, linha por linha.
+
+  Apenas iniciarei dizendo que, em inglês, está os nomes e itens do gênero, e separações internas também.
+  Os comentários, deixarei em português mesmo, para que entendam com maior facilidade.
+ -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Vírus | Avast&reg;</title>
-  <meta charset="utf-8">
+  <title>Vírus | Avast&reg;</title> <!-- Esse '&reg;' é um código que se traduz naquele R dentro de uma bolinha, sabe? Vê no título do site depois para entender; uso esse &reg; em outros momentos aqui no projeto, então não se assustem com isso! Trata-se apenas de algo que chamamos de "entidades HTML", ou seja, todo e qualquer caractere, símbolos e coisas do tipo suportados pelo HTML, mas nem todos podem ser escritos pelo teclado comum e, por isso, usamos esses códigos. -->
+  <meta charset="utf-8"> <!-- Isso aqui é uma configuração interna que permite escrever acentos, símbolos etc. Use em todo projeto que for desenvolver! Todas as tags 'meta' são configurações internas também. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projeto interdisciplinar entre FI & PW I (tema: vírus)">
-  <meta name="author" content="Avast">
+  <meta name="description" content="Projeto interdisciplinar entre FI & PW I (tema: vírus)"> <!-- O que é esse projeto? -->
+  <meta name="author" content="Avast"> <!-- Quem desenvolveu esse projeto? -->
   <!-- equipe Avast: Brenno, Jhonatas, Flávio, Leonardo e Pedro Gil -->
 
   <!-- Bootstrap -->
+  <!--
+    Bootstrap é uma biblioteca que facilita MUITO o desenvolvimento de páginas web: ele basicamente estiliza com CSS um monte de classes e coisas do tipo com coisas que muita gente usa, então você pode poupar muitas linhas de código com isso; um exemplo, é estilizar um botão: você pode abrir o CSS e escrever não menos que dez linhas para isso, ou adicionar uma única 'class' no seu botão e fazer A MESMA COISA. Ou seja, é muito útil. 
+
+    Aqui nesse curso usamos muito bootstrap, e logo mais seremos introduzidos a como usar ele pela primeira vez. Nesse projeto, é usado bastante para esses fins, e infelizmente isso tudo que eu coloquei nessa página pode se mostrar bastante confuso a um primeiro olhar, e você pode não entender o que eu estou fazendo, mas com uma explicação breve você deve conseguir entender.
+
+    Nessas próximas três linhas, eu adiciono o Bootstrap ao documento, para que ele possa ser utilizado ao longo do projeto.
+  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/235f508f3b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <!-- Style -->
+  <!-- Esse você já conhece, certo? -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 
   <!-- Favicon -->
+  <!-- O Favicon é aquele ícone que aparece no título da página, sabe? Que fica do lado esquerdo daquela aba no navegador? Então, nessa linha aqui eu adiciono o favicon do projeto, que no caso é o logo do Avast -->
   <link rel="icon" type="imagem/png" href="images/icon.png">
 </head>
 <body>
 
   <!-- <> Navbar -->
+  <!-- Aqui eu coloco aquele menuzinho da barra de navegação, em que você pode usar ele para navegar com maior facilidade pelo corpo do site. -->
   <header class="p-3 mb-3 border-bottom">
     <div class="container">
 
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
       <a class="navbar-brand" href="#">
-        <img src="images/avast.png" style="width: 16vw; height: 9vh;"/>
+        <img src="images/avast.png" style="width: 16vw; height: 9vh;"/> <!-- Logo do site + definição de tamanho -->
       </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -45,6 +64,13 @@
   <!-- </> Navbar -->
 
   <!-- <> Carousel -->
+  <!--
+    O 'Carousel', ou 'carrossel', são imagens que ficam passando para o lado. Nesse caso aqui, são aqueles três banners que ficam logo abaixo da barra de navegação.
+  
+    O 'input: radio' são botões que, em conjunto, funcionam como um só: não poderá selecionar mais do que uma das opções asseguradas pelo conjunto. Nesse caso, cada botão está atrelado a um banner e, se você selecionar um, será mostrado aquele banner - e não poderá mostrar mais do que um ao mesmo tempo!
+
+    Já as tags 'img' são as próprias imagens. Cada uma delas está dentro de uma div, ou seja, uma divisão dentro do conjunto, e isso torna possível mostrar cada um separadamente.
+  -->
 	<div class="content">
     <div class="slides">
         <input type="radio" name="slide" id="slide1" checked>
@@ -73,6 +99,13 @@
   <!-- </> Carousel -->
 
   <!-- <> Texto 01 -->
+  <!--
+    Isso aqui é o conteúdo da pesquisa mesmo.
+
+    O H2 é o título, o H3 + Span é o subtítulo, e Os Ps são os parágrafos que compõem a pesquisa. O título está relacionado a uma imagem, que é aquele ícone ao lado do título do texto, sabe?
+
+    Já a entidade '&nbsp;' é um espaço. Algumas tags ignoram os espaçamentos antes do primeiro caracter (letra, número, símbolo etc.) e por isso, nesses casos, usamos essa entidade, que não é ignorada - ou seja, você pode usar CSS para separar, ou só colocar essa entidade. Nesse caso aí, usar a entidade me pareceu mais fácil e menos trabalhoso e, portanto, optei por utilizá-la.
+   -->
   <div class="container">
     <hr class="divider">
     <div class=" row featurette">
@@ -86,6 +119,9 @@
   <!-- </> Texto 01 -->
 
    <!-- <> Icons -->
+   <!--
+    Isso aqui é uma estrutura do Bootstrap chamada de 'Cards', ou seja, 'Cartões', que mostram alguma coisa. Nesse caso, eu mostrei representações de 'vírus', e adicionei um título e um texto breve descritivo.
+   -->
   <div class="container marketing">
     <div class="row">
       <div class="col-lg-4">
@@ -112,6 +148,13 @@
     <hr class="divider">
 
     <!-- <> Cards -->
+    <!-- 
+      Esse aqui é outro modelo de Cards, mais comum, e funciona literalmente como um cartãozinho mesmo.
+
+      Cada um deles tem uma imagem de fundo e um título, e está ligado a um endereço URL (um link) que, no caso, leva a um site da própria empresa Avast. Esse link pode ser acessado pelo botão em formato de lupa presente no canto inferior direito do Card.
+
+      Esse botão foi criado usando uma class do próprio Bootstrap, e não precisei eu próprio adicionar esta imagem! Pode testar em casa, na tag <a> dentro de <li> no final de cada card, há uma tag <i> dentro com uma class 'bi-search'. Essa classe que adiciona a imagem e, se você retirá-la ou alterá-la, pode retirar ou alterar o símbolo. Tente colocar, por exemplo, ao invés de 'bi-search', 'bi-instagram'.
+     -->
     <div class="container px-4 py-5" id="custom-cards">
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
@@ -178,6 +221,7 @@
 	<hr class="divider">
 
     <!-- <> About us -->
+    <!-- É um texto sobre a equipe, fazendo algumas piadas e tudo o mais, nada demais mesmo, é só pra deixar mais bonitinho e interativo esse projeto, não ficar tão monótono, sabe? Kjkkkkkk Aí no final tem uma foto da equipe só pra complementar o texto, mesmo. -->
     <div class="row featurette" id="sobre">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/icon.png" style="width: 50px; height: 50px;"></a>&nbsp;Saiba mais sobre nós</h2>
@@ -198,6 +242,7 @@
     <div class="espaço"></div>
   
   <!-- <> Contact -->
+  <!-- Isso aqui ficou muito grande no HTML, mas certamente ficaria muito - mas muito mesmo - maior no CSS, então é melhor deixar assim. É basicamente um formulário de contato, que não funciona pois não está atrelado a um script (que em algum momento aprenderemos a fazer, lá pro segundo ou terceiro módulo, numa linguagem de programação chamada PHP) -->
     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
@@ -230,6 +275,17 @@
   <!-- </> Contact -->
 
   <!-- <> Footer -->
+  <!--
+    É o rodapé! E ainda novas entidades HTML, então vamos conhecê-las:
+  
+    &copy; faz aquele C numa bolinha (tipo o R do &reg;) que simboliza o copywright, relacionado aos direitos autorais e tudo o mais.
+
+    &middot; é só um ponto mesmo, mas diferente do ponto final comum (.) pois este fica centralizado verticalmente, ou seja, não fica no 'chão' igual o ponto final. Caráter puramente estético mesmo.
+
+    No final, tem um link do repositório do GitHub em que está o projeto.
+
+    GitHub é tipo um portifólio para programadores. Alguém posta um sistema lá, em que todos vão ter acesso ao código-fonte e tudo o mais, e ele pode ser usado de várias maneiras: por exemplo, se eu ver um projeto lá, eu posso tentar melhorar ele, solucionar algum problema, usar ele para mim, adaptar parte ou ele em sua totalidade para algum outro projeto etc., e tudo isso pode ser compartilhado com os outros também. O GitHub é uma coisa linda. Usem ele! O meu nome de usuário nessa plataforma é < pedroaggil >. Me segue lá, e você poderá ver vários dos meus projetos que fiz, tanto em HTML/CSS puro, quanto com outras linguagens e ferramentas, como o C#, JavaScript, PHP, Python etc.
+  -->
   <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">

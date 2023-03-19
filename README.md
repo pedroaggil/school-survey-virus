@@ -5,6 +5,8 @@ Projeto interdisciplinar entre Fundamentos da Informática e Programação Web I
 Consiste em pesquisar, em grupo, sobre determinado tema - ou, no caso de minha equipe, vírus - e dispor o conteúdo pesquisado em um website construído para a aula.
 A plataforma deve conter HTML & CSS, mas inclui também Boostrap para poupar esforços.
 
+Ao longo do código-fonte do projeto, há a presença de comentários deixados como material didático para os membros do grupo e demais colegas de curso que se mostrarem interessados.
+
 ### da Equipe
 
 A equipe foi construída aleatoriamente a partir de funções do Excel, e o meu grupo (grupo 02, que chamamos carinhosamente de "Avast") contém os seguintes membros:
