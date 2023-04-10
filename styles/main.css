@@ -1,5 +1,11 @@
+
+/* Assim como fiz com o HTML, deixarei tudo comentado aqui no CSS também, para que possam entender o que está sendo feito. */
+
+/* Isso aqui adiciona algumas fontes ao documento, para que eu possa as utilizar ao invés de usar as padrões do sistema mesmo, como a Arial, Times New Roman etc. Eu peguei essa fonte do Google Fonts e, se quiser, posso ensinar depois como pegar uma ou mais fontes de lá para usar no seu código. */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
+
+/* Isso aqui é um pouco complexo de explicar tudo, mas é basicamente um negócio que deixa funcionar melhor em diferentes dispositivos, como em notebooks, PCs, celulares, tablets etc., que tem tamanho de telas diferentes entre si. */
   @media (min-width: 1rem) {
 
 .carousel-caption p {
@@ -22,9 +28,12 @@
   }
 }
 
+/* O text-align alinha um texto na tela, e nesses casos, alinhei respectivamente de forma justificada e centralizada à tela, e usei o parâmetro '!important' para dizer que esse comando deve se sobrepor a outros comandos realizados ao longo desse código (porquê essa linha aí é mais importante na perspectiva do sistema). */
 p { text-align: justify !important; }
 .virus { text-align: center !important; }
 
+/* Lembra aquela parte que falamos um pouco sobre a equipe? Isso aqui tá estilizando aquela parte.
+Basicamente, tudo o que ele está fazendo aqui é tentar de diversas formas centralizar o conteúdo, vertical e horizontalmente, definir a altura/largura e justificar o texto. */
 .team {
   position: relative;
   top: 50%;
@@ -46,6 +55,7 @@ p { text-align: justify !important; }
 
 }
 
+/* "Olha CSS, pega o documento inteiro e faz ele aparecer em toda a tela, aí aproveita e já deixa a fonte padrão como sendo aquela lá que eu importei lá em cima". */
 body, html{
   margin: 0;
   width:100%;
@@ -55,6 +65,13 @@ body, html{
 
 }
 
+/* Isso aqui estiliza a barra de navegação:
+  - Faz ela funcionar em todos os navegadores;
+  - Faz ela grudar na tela visível para o usuário pra sempre;
+  - Deixa ela colada no começo da página;
+  - Faz ela se sobrepor aos outros elementos;
+  - E deixa a cor de fundo dela como branca.
+*/
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -63,11 +80,13 @@ header {
   background-color: #fff;
 }
 
+/* Aumenta a fonte dos itens da navbar e deixa eles meio longe do topo */
 header .nav-item{
   font-size: 18px;
   margin-top: 1.6rem;
 }
 
+/* Deixa a fonte mais grossinha, reduz os espaços internos laterais e joga esses espaços para a parte externa, aí muda a cor e coloca uma borda invisível embaixo de cada item da navbar */
 header .nav-link {
   font-weight: 600;
   padding-left: 0;
@@ -78,6 +97,7 @@ header .nav-link {
   border-bottom: solid 4px transparent;
 }
 
+/* Aí quando o usuário passa o mouse em cima do item da navbar, faz aquela barra invisível mudar de cor e muda a cor do texto também, pra destacar o conteúdo desse item que o usuário mostrou interesse */
 header .nav-link:hover {
   border-bottom: solid 4px #F2955E;
   color: #F2955E;
@@ -101,10 +121,12 @@ header .nav-link:hover {
   color: #F2955E;
 }
 
+/* Põe umas sombras nesses textos que têm essa classe aqui */
 .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
 .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
 .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
 
+/* Faz umas estilizações padronizadas para os Cards do Bootstrap */
 .card-cover {
   background-repeat: no-repeat;
   background-position: center center;
