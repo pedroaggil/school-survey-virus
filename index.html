@@ -4,9 +4,10 @@
   <title>Vírus | Avast&reg;</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/aos.css">
   <meta name="description" content="Projeto interdisciplinar entre FI & PW I (tema: vírus)">
   <meta name="author" content="Avast">
-  <!-- equipe Avast: Brenno, Jhonatas, Flávio, Leonardo e Pedro Gil -->
+  <!-- equipe Avast: Eduardo, Brenno, Jhonatas, Flávio, Leonardo e Pedro Gil -->
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -17,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 
   <!-- Favicon -->
-  <link rel="icon" type="imagem/png" href="images/icon.png">
+  <link rel="icon" type="imagem/png" class="img-fluid" href="images/icon.png">
 </head>
 <body>
 
@@ -28,7 +29,7 @@
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
       <a class="navbar-brand" href="#">
-        <img src="images/avast.png" style="width: 16vw; height: 9vh;"/>
+        <img src="images/avast.png" class="img-fluid" data-aos="fade-right">
       </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -73,27 +74,13 @@
       <label class="bar" for="slide3"></label>
     </div>
   </div>
-  <!-- </> Carousel -->
-
-  <!-- <> Text for example -->
-  <!-- <div class="container">
-    <hr class="divider">
-    <div class=" row featurette">
-      <h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/virus.png" style="width: 50px; height: 50px;"></a>&nbsp;Título</h2>
-      <h3 class="sub"><span class="text-muted">Subtítulo</span></h3>
-      <p>
-        Dia 11 fev. 2020: o dia onde o mundo anuncia oficialmente o estado de pandemia.
-      </p>
-    </div>
-  </div> -->
-  <!-- </> Text for example -->
-	
-  <!-- <> Texto 00 -->
-  <div id="virus" class="container">
-  <hr class="divider">
-  <div class=" row featurette">
-    <h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/virus.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus computacional</h2>
-    <h3 class="sub"><span class="text-muted">Os vírus são nocivos?</span></h3>
+ 
+  <div id="virus" class="container" data-aos="fade-right">
+  <hr class="divider" data-aos="fade-right">
+  <div class=" row featurette" data-aos="fade-right">
+    <h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo">
+      <img data-aos="fade-right" src="images/virus.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus computacional</h2>
+    <h3 class="sub"><span data-aos="fade-right" class="text-muted">Os vírus são nocivos?</span></h3>
     <p>
       	Um vírus de computador é um tipo de malware que se liga a outros programas, se autorreplica e se espalha de um computador para outro⁴. Ele é desenvolvido por programadores geralmente inescrupulosos e infecta o sistema, faz cópias de si e tenta se espalhar para outros computadores e dispositivos de informática². A maioria das contaminações ocorre por ação do usuário².
 		<br><br>
@@ -124,10 +111,10 @@
   <!-- </> Texto 00 -->
 
     <!-- < > Texto 01 -->
-	<div id="rams" class="container">
+	<div id="rams" class="container" data-aos="fade-right">
 		<hr class="divider">
 		<div class=" row featurette">
-			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/sequestro.png" style="width: 50px; height: 50px;"></a>&nbsp;Ransomware</h2>
+			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img data-aos="fade-right" src="images/sequestro.png" style="width: 50px; height: 50px;"></a>&nbsp;Ransomware</h2>
 			<h3 class="sub"><span class="text-muted">O Sequestrador de Dados</span></h3>
 			<p>
 				O Ransomware é um tipo de malware que sequestra o acesso a arquivos ou sistemas, criptografando-os e exigindo um pagamento em dinheiro para a liberação do acesso. Esse tipo de ameaça cibernética é muito perigosa, pois pode causar grandes prejuízos financeiros e até mesmo o vazamento de informações confidenciais. Para se proteger contra o Ransomware, é importante manter o sistema operacional e softwares sempre atualizados, além de utilizar um antivírus de qualidade e fazer backups regulares dos arquivos importantes.
@@ -137,10 +124,10 @@
 	<!-- </> Texto 01 -->
 
 	<!-- < > Texto 02 -->
-	<div id="boot" class="container">
+	<div id="boot" class="container" data-aos="fade-right">
 		<hr class="divider">
 		<div class=" row featurette">
-			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/cd.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Boot</h2>
+			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img data-aos="fade-right" src="images/cd.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Boot</h2>
 			<h3 class="sub"><span class="text-muted">Esse aqui já fez muitos computadores serem chutados</span></h3>
 			<p>
 				O vírus de "boot" é um programa muito pequeno que se instala nas áreas iniciais do disco rígido, em que estão armazenadas informações vitais para o funcionamento do microcomputador: a organização física do disco rígido, além dos dados necessários ao sistema operacional DOS para controle e operação geral do equipamento.
@@ -159,10 +146,10 @@
 	<!-- </> Texto 02 -->
 
 	<!-- < > Texto 03 -->
-	<div id="arq" class="container">
+	<div id="arq" class="container" data-aos="fade-right">
 		<hr class="divider">
 		<div class=" row featurette">
-			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/arquivo.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Arquivo</h2>
+			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img data-aos="fade-right" src="images/arquivo.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Arquivo</h2>
 			<h3 class="sub"><span class="text-muted">Cuidado com os joguinhos do &#181;Torrent!</span></h3>
 			<p>
 				Um vírus que infecta arquivos é um tipo de malware que infecta arquivos executáveis ​​com a intenção de causar danos permanentes ou torná-los inutilizáveis. Um vírus que infecta arquivos substitui o código ou insere o código infectado em um arquivo executável. Esse tipo de vírus pode infectar vários sistemas operacionais, incluindo Macintosh, Windows e Unix. Um vírus que infecta arquivos também pode ser conhecido como injetor de arquivos. Contudo, ele apenas consegue agir a partir da ação do usuário - ou seja, quando ele abre um desses arquivos contaminados. Portanto, é sempre indicado abrir arquivos apenas de fontes confiáveis, para evitar esse tipo de transtorno.
@@ -175,10 +162,10 @@
 	<!-- </> Texto 03 -->
 
 	<!-- < > Texto 04 -->
-	<div id="macro" class="container">
+	<div id="macro" class="container" data-aos="fade-right">
 		<hr class="divider">
 		<div class=" row featurette">
-			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/office.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Macro</h2>
+			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img data-aos="fade-right" src="images/office.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Macro</h2>
 			<h3 class="sub"><span class="text-muted">Coisas que o Wellington ensina</span></h3>
 			<p>
 Os vírus de macro são um tipo de vírus de computador
@@ -197,10 +184,10 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
 	<!-- </> Texto 04 -->
 
 	<!-- < > Texto 05 -->
-	<div id="script" class="container">
+	<div id="script" class="container" data-aos="fade-right">
 		<hr class="divider">
 		<div class=" row featurette">
-			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/script.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Script</h2>
+			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img data-aos="fade-right" src="images/script.png" style="width: 50px; height: 50px;"></a>&nbsp;Vírus de Script</h2>
 			<h3 class="sub"><span class="text-muted">O JavaScript é um vilão?</span></h3>
 			<p>
 				Escrito em linguagem de script, como VBScript e JavaScript, e recebido ao acessar uma página Web ou por e-mail, como um arquivo anexo ou como parte do próprio e-mail escrito em formato HTML. Pode ser automaticamente executado, dependendo da configuração do navegador Web e do programa leitor de e-mails do usuário.
@@ -213,10 +200,10 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
 	<!-- </> Texto 05 -->
 
 	<!-- < > Texto 06 -->
-	<div id="worm" class="container">
+	<div id="worm" class="container" data-aos="fade-right">
 		<hr class="divider">
 		<div class=" row featurette">
-			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/worm.png" style="width: 50px; height: 50px;"></a>&nbsp;Worms</h2>
+			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img data-aos="fade-right" src="images/worm.png" style="width: 50px; height: 50px;"></a>&nbsp;Worms</h2>
 			<h3 class="sub"><span class="text-muted">Rastejando entre seus arquivos</span></h3>
 			<p>
 			Worm é um programa capaz de se propagar automaticamente através de redes, enviando cópias de si mesmo de computador para computador. Diferente do vírus, o worm não embute cópias de si mesmo em outros programas ou arquivos e não necessita ser explicitamente executado para se propagar.
@@ -229,10 +216,10 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
 	<!-- </> Texto 06 -->
 
 	<!-- < > Texto 07 -->
-	<div id="trojan" class="container">
+	<div id="trojan" class="container" data-aos="fade-right">
 		<hr class="divider">
 		<div class=" row featurette">
-			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img src="images/cavalo-de-troia.png" style="width: 50px; height: 50px;"></a>&nbsp;Trojan</h2>
+			<h2 class="featurette-heading fw-bold" style="font-size: 48px;"><a class="logo"><img data-aos="fade-right" src="images/cavalo-de-troia.png" style="width: 50px; height: 50px;"></a>&nbsp;Trojan</h2>
 			<h3 class="sub"><span class="text-muted">O "Cavalo de Tróia" da Informática</span></h3>
 			<p>
 				O Trojan, ou cavalo de Troia, é um tipo de malware que se disfarça como um programa legítimo, mas que na verdade possui objetivos maliciosos, como obter acesso não autorizado ao sistema ou roubar informações confidenciais. Esse tipo de ameaça pode ser muito perigosa, pois geralmente trabalha em segundo plano, sem que o usuário perceba, podendo causar danos significativos ao sistema ou à privacidade do usuário. Para se proteger contra o Trojan, é importante manter o sistema operacional e softwares sempre atualizados, além de evitar instalar programas de fontes desconhecidas e utilizar um antivírus de qualidade.
@@ -242,10 +229,10 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
 	<!-- </> Texto 07 -->
 
    <!-- <> Icons -->
-  <div class="container marketing">
+  <div class="container marketing" data-aos="fade-right">
     <div class="row">
       <div class="col-lg-4">
-        <img src="images/c.png">
+        <img src="images/c.png" data-aos="fade-top">
 
         <h2 class="fw-bold"><i>Brain</i></h2>
         <p class="virus">
@@ -253,7 +240,7 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
 		</p>
       </div>
       <div class="col-lg-4">
-        <img src="images/g.png">
+        <img src="images/g.png" data-aos="fade-top">
 
         <h2 class="fw-bold"><i>Kilim</i></h2>
         <p class="virus">
@@ -261,7 +248,7 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
 		</p>
       </div>
       <div class="col-lg-4">
-        <img src="images/m.png">
+        <img src="images/m.png" data-aos="fade-top">
 
         <h2 class="fw-bold"><i>Sality</i></h2>
         <p class="virus">
@@ -399,7 +386,10 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="https://www.github.com/pedroaggil/school-survey-virus"><svg class="bi" width="8" height="8"><i class="bi bi-github"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.github.com/pedroaggil/school-survey-virus">
+        <svg class="bi" width="8" height="8"></svg><i class="bi bi-github"></i>
+        </a>
+      </li>
     </ul>
   </footer>
   </div>
@@ -408,6 +398,14 @@ Eduque-se sobre as melhores práticas para uma navegação segura.
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000,
+    }
+    );
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>
